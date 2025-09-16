@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h3>텍스트 관련 인풋 타입</h3>
+
+  <label for="tex">text</label> <br>
+  <input id="tex" name="tex" type="text" placeholder="5자 이하" maxlength="5"><br>
+
+  <label for="pass">password</label> <br>
+  <input id="pass" name="pass" type="password" placeholder="4자 이상" minlegth="4"><br>
+
+  <label for="search">search</label> <br>
+  <input id="search" name="search" type="search"><br>
+
+  <label for="tel">tel</label> <br>
+  <input id="tel" name="tel" type="tel"><br>
+
+  <button>제출</button>
+
+  <h3>숫자 관련 인풋 타입</h3>
+
+  <label for="num">number</label> <br>
+  <input id="num" name="num1" type="number" min="0" max="10"><br>
+  <label for="rgIp">range</label> <br>
+  <input id="rgIp" type="range" min="0" max="100" step="20">
+
+  <br><br>
+  <label for="dtIp">date</label> <br>
+  <input id="dtIp" type="date" min="2020-01-01" max="2030-12-31">
+  <br><br>
+
+  <h3>체크 관련 인풋 타입</h3>
+  <h2>checkbox</h2>
+  <input id="check" name="check" type="checkbox">
+  <label for="check">유기농<label>
+
+      <h2>radio</h2>
+      <input type="radio" name="fruit" id="f_apple" value="apple">
+      <label for="f_apple">사과</label>
+
+      <input type="radio" name="fruit" id="f_grape" value="grape">
+      <label for="f_grape">포도</label>
+
+      <input type="radio" name="fruit" id="f_orange" value="orange">
+      <label for="f_orange">오렌지</label>
+
+      <br>
+
+      <input type="radio" name="vegitable" id="v_carrot" value="carrot">
+      <label for="v_carrot">당근</label>
+
+      <input type="radio" name="vegitable" id="v_tamato" value="tamato">
+      <label for="v_tamato">토마토</label>
+
+      <input type="radio" name="vegitable" id="v_what" value="what">
+      <label for="v_what">가지</label>
+</body>
+
+</html>
