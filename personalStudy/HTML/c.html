@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    mark {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  &lt;head&gt;
+
+  <p>마틴 파울러는 그의 저서에서 이렇게 말했습니다.</p>
+  <blockquote cite="https://martinfowler.com/">
+    어설픈 프로그래머는 코드를 작성한다. 좋은 프로그래머는 소프트웨어를 작성한다.
+  </blockquote>
+
+  <p>에드바르 뭉크의 작품인 <cite>절규</cite>는 그의 대표작 중 하나입니다.</p>
+  <!-- cite 태그 => 글자가 기울어짐 -->
+  <p>선생님은 <q>포기하지 않는 것이 중요하다</q>라고 말씀하셨다.</p>
+  <!-- q 태그 => "" 사용된다. -->
+
+  <p>과제 제출 시 <mark>마감 기한을 반드시 준수</mark>해야 합니다.</p>
+  <!-- 형광줄 칠해짐 -->
+
+  <blockquote cite="https://www.w3.org/TR/html52/textlevel-semantics.html#the-q-element">
+    q 요소는 주변 텍스트에서 따온 구문을 나타냅니다.
+  </blockquote>
+
+  <p>
+    그는 <q cite="http://example.com/source">안녕하세요</q>라고 말했다.
+  </p>
+  <blockquote cite="https://ko.wikipedia.org/wiki/스티브_잡스">
+    <p>혁신은 리더와 추종자를 구분하는 잣대입니다.</p>
+  </blockquote>
+  <p>— 스티브 잡스, 출처: <cite>위키백과</cite></p>
+
+  <!-- 인용문 사용 예시 -> 이렇게 인용 문장에 q cite 사용-->
+  <p>
+    과거 스티브 잡스는 <q cite="https://ko.wikipedia.org/wiki/스티브_잡스">혁신은 리더와 추종자를 구분하는 잣대입니다</q>라고 말했습니다.
+  </p>
+  <blockquote cite="https://ko.wikipedia.org/wiki/스티브_잡스">
+    <p>혁신은 리더와 추종자를 구분하는 잣대입니다.</p>
+  </blockquote>
+  <p>— 스티브 잡스</p>
+</body>
+
+</html>
