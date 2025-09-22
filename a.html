@@ -6,22 +6,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    div {
-  padding: 24px;
-  background-color: skyblue;
+    body {
+      margin: 0;
+    }
 
-  cursor: pointer;
-  /* opacity: 0; */
-  /* visibility:  hidden; */
-  display: none;
-}
+    #container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    #header {
+      display: flex;
+      flex-basis: 100px;
+      padding: 12px;
+      background: dodgerblue;
+      gap:12px;
+      align-items: flex-end;
+      text-align: center;
+
+    }
+
+    #header>* {
+      background-color: yellow;
+      padding: 12px 0;
+    }
+
+    #header > *:first-child {
+      flex-basis:100px;
+    }
+    
+    #header > *:last-child {
+      flex-grow:1;
+    }
+    #main {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+
+    }
+    
+    #content{
+      padding: 24px;
+      background-color: skyblue;
+
+    }
+
+
+    #footer {
+      flex-basis: 60px;
+      background-color: tomato;
+    }
   </style>
 </head>
 
 <body>
-  <div>
-    div{이 요소에 적용해보세요!}+p{다음 요소}
-  </div>
+
+  <body>
+
+    <div id="container">
+      <div id="header">
+        <div>로고</div>
+        <div>메뉴들</div>
+      </div>
+      <div id="main">
+        <div id="content">
+          부모의 한가운데 배치
+        </div>
+      </div>
+      <div id="footer">
+      </div>
+    </div>
+
+  </body>
 </body>
 
 </html>
